@@ -1,5 +1,6 @@
 from reader import read_file
 from flask import Flask
+import random
 
 app = Flask(__name__)
 
@@ -12,4 +13,6 @@ def hello_world():
         iter = int(value[0])
         for x in range (0, iter):
             res.append(key)
+    
+    random.shuffle(res)
     return res
