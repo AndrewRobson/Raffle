@@ -15,4 +15,4 @@ def hello_world():
             res.append(key)
     
     random.shuffle(res)
-    return res
+    return random.choice(res)
